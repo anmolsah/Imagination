@@ -1,0 +1,38 @@
+.dot-flashing {
+  position: relative;
+  width: 40px;
+  height: 20px;
+}
+
+.dot-flashing::before,
+.dot-flashing::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: #ea2fd7;
+  border-radius: 50%;
+  animation: dot-blink 1.4s infinite ease-in-out;
+}
+
+.dot-flashing::before {
+  left: 0;
+  animation-delay: 0s;
+}
+
+.dot-flashing::after {
+  right: 0;
+  animation-delay: 0.2s;
+}
+
+@keyframes dot-blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

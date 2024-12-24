@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/2d7fe3c722.js"
+      crossorigin="anonymous"
+    ></script>
+    <link id="dynamic-favicon" rel="icon" type="image/png" href />
+    <title>imagiNATION</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script>
+      function createBlackDotFavicon() {
+        const canvas = document.createElement("canvas");
+        const ctx = canvas.getContext("2d");
+
+        canvas.width = 64;
+        canvas.height = 64;
+
+        ctx.fillStyle = "#000";
+        ctx.beginPath();
+        ctx.arc(canvas.width / 2, canvas.height / 2, 20, 0, Math.PI * 2, false);
+        ctx.fill();
+
+        const favicon = document.getElementById("dynamic-favicon");
+        favicon.href = canvas.toDataURL("image/png");
+      }
+
+      createBlackDotFavicon();
+    </script>
+  </body>
+</html>
