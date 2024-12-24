@@ -4,7 +4,6 @@ import FormData from "form-data";
 import userModel from "../models/userModel.js";
 
 // Controller function to generate image from prompt
-// http://localhost:4000/api/image/generate-image
 export const generateImage = async (req, res) => {
   try {
     const { userId, prompt } = req.body;
