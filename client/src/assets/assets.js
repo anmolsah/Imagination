@@ -26,6 +26,10 @@ import image3 from "./image_3.png";
 import image4 from "./image_4.png";
 import bazzar from "./bazzar.webp";
 import badass from "./badass.png";
+import image5 from "./image_5.png";
+import image6 from "./image_6.png";
+import image7 from "./image_7.png";
+import image9 from "./image_9.png";
 
 export const assets = {
   logo,
@@ -51,6 +55,10 @@ export const assets = {
   image4,
   bazzar,
   badass,
+  image5,
+  image6,
+  image7,
+  image9,
 };
 
 export const stepsData = [

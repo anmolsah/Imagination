@@ -99,7 +99,7 @@ const Result = () => {
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
   const [isImageLoaded, setIsImageLoaded] = useState(false);
-  const [image, setImage] = useState(assets.image4);
+  const [image, setImage] = useState(assets.image9);
 
   const { generateImage } = useContext(AppContext);
 
@@ -129,7 +129,7 @@ const Result = () => {
       {/* Image Section */}
       <div className="relative mb-6">
         <img
-          className="max-w-sm rounded-md shadow-md transition-all duration-300 ease-in-out"
+          className="max-w-sm rounded-md shadow-gray-700 shadow-lg transition-all duration-300 ease-in-out"
           src={image}
           alt="Generated result"
         />
