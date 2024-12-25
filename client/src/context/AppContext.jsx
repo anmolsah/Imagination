@@ -42,7 +42,8 @@ const AppContextProvider = (props) => {
         loadCreditsData();
         return data.resultImage;
       } else {
-        toast.error(data.message);
+        toast.error("Your API key has expired. Please contact the owner.");
+        //toast.error(data.message);
         loadCreditsData();
         if (data.creditBalance === 0) {
           navigate("/buy");
