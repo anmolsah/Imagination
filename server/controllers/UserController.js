@@ -102,19 +102,19 @@ const paymentRazorpay = async (req, res) => {
     switch (planId) {
       case "Basic":
         plan = "Basic";
-        credits = 100;
+        credits = 8;
         amount = 1000;
         break;
 
       case "Advanced":
         plan = "Advanced";
-        credits = 5000;
-        amount = 500;
+        credits = 10;
+        amount = 2000;
         break;
 
       case "Business":
         plan = "Business";
-        credits = 5000;
+        credits = 12;
         amount = 50000;
         break;
 
