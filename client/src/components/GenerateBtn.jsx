@@ -21,7 +21,7 @@ const GenerateBtn = () => {
       }
       scrollTo(0, 0);
       setIsLoading(false);
-    }, 500); // Simulate smooth transition
+    }, 500); 
   };
 
   return (
