@@ -83,9 +83,6 @@ const BuyCredit = () => {
             className="bg-white drop-shadow-md border border-gray-300 rounded-lg py-12 px-8 text-gray-700 hover:scale-105 transition-all duration-500"
             key={index}
           >
-            {/* <h2 className="text-4xl font-bold mb-3 text-blue-600">
-              imagiNATION
-            </h2> */}
             <Logo />
             <p className="mt-3 mb-1 font-semibold text-orange-500">{item.id}</p>
             <p className="text-sm">{item.desc}</p>
