@@ -4,8 +4,6 @@ import Logo from "./Logo";
 const Footer = () => {
   return (
     <div className="flex flex-col md:flex-row items-center justify-between gap-4 py-8 mt-20 bg-white text-[#364F6B]">
-      {/* Text Logo */}
-      {/* <h1 className="text-3xl font-semibold text-blue-600">imagiNation</h1> */}
       <Logo />
 
       {/* Copyright Text */}
