@@ -1,12 +1,10 @@
 import React, { useContext } from "react";
 import { Routes, Route } from "react-router-dom";
-
 import Home from "./pages/Home";
 import Result from "./pages/Result";
 import BuyCredit from "./pages/BuyCredit";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Login from "./components/Login";
