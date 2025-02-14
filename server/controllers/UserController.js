@@ -174,12 +174,10 @@ const verifyRazorpay = async (req, res) => {
         return res.json({ success: false, message: "Payment Failed" });
       }
 
-      // Adding Credits in user data
       const userData = await userModel.findById(transactionData.userId);
       const creditBalance = userData.creditBalance + transactionData.credits;
       await userModel.findByIdAndUpdate(userData._id, { creditBalance });
 
-      // Marking the payment true
       await transactionModel.findByIdAndUpdate(transactionData._id, {
         payment: true,
       });
