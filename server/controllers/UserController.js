@@ -132,17 +132,14 @@ const paymentRazorpay = async (req, res) => {
       date,
     };
 
-    // Saving Transaction Data to Database
     const newTransaction = await transactionModel.create(transactionData);
 
-    // Creating options to create razorpay Order
     const options = {
       amount: amount * 100,
       currency: process.env.CURRENCY,
       receipt: newTransaction._id,
     };
 
-    // Creating razorpay Order
     await razorpayInstance.orders.create(options, (error, order) => {
       if (error) {
         console.log(error);
