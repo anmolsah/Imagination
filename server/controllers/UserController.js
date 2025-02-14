@@ -4,7 +4,6 @@ import razorpay from "razorpay";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 
-// API to register user
 const registerUser = async (req, res) => {
   try {
     const { name, email, password } = req.body;
